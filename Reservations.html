@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rezerwacje</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Wypożyczalnia samochodów</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="MainPage.html">Strona główna</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Price.html">Cennik</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Reservations.html">Rezerwacja</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <section class="container">
+      <h1>Formularz rezerwacji</h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="first-name">Imię</label>
+            <input type="text" class="form-control" id="first-name" placeholder="Wprowadź imię" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="last-name">Nazwisko</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Wprowadź nazwisko" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres</label>
+          <input type="text" class="form-control" id="address" placeholder="Wprowadź adres" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="start-date">Data wypożyczenia</label>
+            <input type="date" class="form-control" id="start-date" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="end-date">Data zwrotu</label>
+            <input type="date" class="form-control" id="end-date" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="car">Auto</label>
+          <select class="form-control" id="car" required>
+            <option value="">Wybierz auto</option>
+            <option value="car1">BMW  500/doba</option>
+            <option value="car2">Skoda  500/doba</option>
+            <option value="car3">Audi S3  490/doba</option>
+            <option value="car3">Mercedes  500/doba</option>
+            <option value="car3">Audi A7  490/doba</option>
+            <option value="car3">Pakiet dwóch dowolnych Aut  850/doba</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="documents">Dokumenty potwierdzające możliwość prowadzenia pojazdu</label>
+          <div class="custom-file" id="documents">
+            <input type="file" class="custom-file-input" id="customFile" required>
+            <label class="custom-file-label" for="customFile">Wybierz plik</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Zarezerwuj</button>
+      </form>
+    </section>
+  </div>
+
+  <footer class="bg-dark text-white text-center p-3">
+    &copy; 2023 Wypożyczalnia samochodów | Numer kontaktowy: +48 123 456 789 | Adres e-mail: fastcars@gmail.com
+  </footer>
+
+</body>
+</html>
